@@ -39,17 +39,24 @@
         </ul>
         {% endif %}
       </header>
+      
+  {% if site.paginate %}
+    {% assign posts = paginator.posts %}
+  {% else %}
+    {% assign posts = site.posts %}
+  {% endif %}
+
       <section>
-Where is this?
+
       {{ content }}
 
-      </section>
 
-
-
-
-
-<div class="home">
+        
+<h1 id="daniels-developer-blog">Daniel’s Developer Blog</h1>
+<hr>
+<p>title: Welcome to my blog
+—</p>
+<h2 id="welcome-to-my-first-blog">Welcome to my first blog.</h2>        
 
   {%- if posts.size > 0 -%}
   
@@ -75,7 +82,7 @@ Where is this?
 
   {%- endif -%}
 
-</div>
+      </section>
 
 
 
