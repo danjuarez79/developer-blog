@@ -4,3 +4,6 @@ plugins:
 #theme: jekyll-theme-minimal
 #theme: jekyll-theme-slate
 #theme: minima
+
+prose:
+  rooturl: '_posts'
