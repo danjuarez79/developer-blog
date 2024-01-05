@@ -5,5 +5,4 @@ plugins:
 #theme: jekyll-theme-slate
 #theme: minima
 
-prose:
-  rooturl: '_posts'
+ignore_theme_config: true
