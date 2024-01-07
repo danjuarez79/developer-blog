@@ -5,9 +5,9 @@ date: 2024-01-05
 
 # SSH with GitHub
 
-I've recently gone through the process of setting VS Code with GitHub among other things to move away from using Eclipse and learning a secondary tool. These are the steps I used to set up VS Code with Github. I started with a key already on Github but I'll explain some of those steps too create the PPK too.
+I've recently gone through the process of setting up VS Code with GitHub. The reason for this was to move away from using Eclipse and learning a secondary tool. These are the steps I used to set up VS Code with Github. I started with a PPK key I already had on Github but I'll explain the steps to create this PPK too.
 
-These are the steps to make a PPK for use with Eclipse and Pageant and a PUB for VS Code and command line.
+These are the steps to make an SSH key for use with Eclipse and Pageant and VS Code and command line.
 
 - Prerequisites:
 
@@ -31,15 +31,15 @@ These are the steps to make a PPK for use with Eclipse and Pageant and a PUB for
     + Curve type: nistp256.
     + Press the "Generate" button.
     + Move your mouse around the screen till the bar fills up.
-    + Optional: (Recommended) Enter a passphrase (you'll be asked to enter this when using it).
+    + Optional but recommended: Enter a passphrase (you'll be asked to enter this when using it).
     + Select File > Save private key.
     + Place the key in your {user}/.ssh directory.
     + Keep PuttyGen open and the key loaded for the next step.
 
 - Pageant with Eclipse Git (Egit).
 
-    + For Eclipse Git (Egit) you can have the ppk loaded in pageant.
-    + With this tool you only need to use your passphrase once.
+    + For Eclipse Git (Egit) you can have the ppk loaded in Pageant. With this tool you only need to use your passphrase once.
+    + However, if you don't mind entering the passphrase every time you can use .PUB in the {user}/.ssh we create next. 
 
 - Generate the PUB Key (for VS Code use)
 
